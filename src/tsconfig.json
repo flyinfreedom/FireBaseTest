@@ -3,7 +3,10 @@
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": ["es6", "dom"],
+    "lib": [
+      "es6",
+      "dom"
+    ],
     "mapRoot": "./",
     "module": "es6",
     "moduleResolution": "node",
@@ -13,5 +16,18 @@
     "typeRoots": [
       "../node_modules/@types"
     ]
-  }
+  },
+  "filesGlob": [
+    "**/*.ts",
+    "**/*.tsx",
+    "!node_modules/**"
+  ],
+  "files": [
+    "globals.ts",
+    "linter.ts",
+    "main/atom/atomUtils.ts",
+    "main/atom/autoCompleteProvider.ts",
+    "worker/messages.ts",
+    "worker/parent.ts"
+  ]
 }
